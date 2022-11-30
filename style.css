@@ -1,0 +1,484 @@
+
+
+/* SOME BASIC RESETS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/* Media queries are used at following break points
+    875, 768, 520
+
+
+
+*/
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Metrophobic', sans-serif;
+    box-sizing: border-box;
+}
+@media (max-width: 875px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    line-height: 1.2;
+    color: #212121;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+input {
+    font-family: inherit;
+    outline: none;
+}
+
+ul {
+    display: block;
+    padding-left: 2rem;
+}
+
+/* ********************* */
+/* UNIVERSAL CLASSES */
+/* ********************* */
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 140rem;
+    padding: 8rem 0 6rem;
+}
+
+@media (max-width: 520px) {
+    .container {
+        padding: 4rem 0;
+    }
+}
+
+.section__heading {
+    font-size: 5.2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.btn{
+    padding: 1.2rem 2rem;
+    display: block;
+    min-width: 15rem;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: inherit;
+    box-shadow: -1px 6px 19px -5px rgba(45,64,89,0.69);
+}
+
+
+/* ********************* */
+/* HERO SECTION */
+/* ********************* */
+
+.hero{
+    background-color: #2d4059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero__profile {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* @media (max-width: 520px) {
+    .hero__profile {
+        width: 25rem;
+    }
+} */
+
+.profile__img {
+    max-width: 35rem;
+    border: 12px solid #ea5455;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 520px) {
+    .profile__img {
+        width: 28rem;
+    }
+}
+
+
+.profile__name {
+    font-size: 6.8rem;
+    margin-top: 1rem;
+    letter-spacing: -.5rem;
+}
+
+@media (max-width: 520px) {
+    .profile__name {
+        font-size: 5.6rem;
+    }
+}
+
+.profile__title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.6rem;
+    color: #ea5455;
+}
+
+@media (max-width: 520px) {
+    .profile__title {
+        font-size: 3rem;
+    }
+}
+
+.profile__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+
+.profile__btn-1 {
+    background-color: #ea5455;
+    color: #FFFFFF;
+    transition: color, background-color.3s ease;
+}
+
+.profile__btn-1:hover {
+    background-color: #fff;
+    color: #ea5455;
+}
+
+.profile__btn-2 {
+    color: #ea5455;
+    transition: color .3 ease;
+}
+
+.profile__btn-2:hover {
+    color: #2d4059;
+}
+
+
+
+/* ********************* */
+/* ABOUT ME SECTION */
+/* ********************* */
+
+
+.about {
+    background-color: #ea5455;
+}
+
+.about__content {
+    background-color: #FFFFFF;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 5px;
+
+    box-shadow: -1px 6px 19px -5px rgba(45,64,89,0.69);
+
+}
+
+@media (max-width: 520px) {
+    .about__content {
+        flex-direction: column;
+    }
+}
+
+
+.about__desc h3, .about__info h3 {
+    color: #212121;
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+
+.about__desc {
+    max-width: 60%;
+    border-right: 1px solid #212121;
+    padding: 2.4rem 4.2rem;
+}
+
+@media (max-width: 520px) {
+    .about__desc {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #212121;
+    }
+}
+
+
+.about__desc p {
+    line-height: 1.5;
+}
+
+
+.about__info {
+    padding: 2.4rem 4.2rem;
+}
+
+.about__info p {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.about__info p b {
+    min-width: 40%
+}
+
+
+/* ********************* */
+/* EDUCATION SECTION */
+/* ********************* */
+
+
+.education {
+    background-color: #2d4059;
+}
+
+.education__card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: -1px 6px 19px -5px rgba(45,64,89,0.69);
+    border-radius: 5px;
+    margin-bottom: 5rem;
+
+}
+
+.card__header {
+    background-color: #ea5455;
+    padding: 2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card__header h2 span {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 520px) {
+    .card__header h2 span {
+        display: block;
+    }
+}
+
+.card__body {
+    padding: 2rem;
+}
+
+.card__body h3 {
+    color: #212121;
+    margin-bottom: .5rem;
+}
+
+
+
+/* ********************* */
+/* SKILLS SECTION */
+/* ********************* */
+
+
+.skills {
+    background-color: #ea5455;
+}
+
+
+.skills__items__container {
+    display: grid;
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem 5rem;
+}
+
+
+.skills__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 6.5rem;
+
+}
+
+.item__icon{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    width: 8rem;
+    font-size: 2.6rem;
+    background-color: #2d4059;
+    padding: 2rem;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+}
+
+.item__name{
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 2rem;
+    width: 16rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 100%;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 875px) {
+    .item__name {
+        padding: 1.6rem;
+        width: 12rem;
+    }
+    .item__icon {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills__items__container {
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .skills__items__container {
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+/* ********************* */
+/* CONTACT ME SECTION */
+/* ********************* */
+
+.error-msg, .check-icon, .exclamation-icon {
+    display: none;
+}
+
+.contact {
+    background-color: #2d4059;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: minmax(25rem, 1fr );
+    gap: 2.4rem ;
+
+    max-width: 650px;
+    margin: 0 auto;
+} 
+
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.query-contatiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.query-item {
+    display: inline-block;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+.query {
+    width: auto;
+    margin-left: .8rem;
+}
+
+.query-field{
+    display: none;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-submit {
+    background-color: #ea5455;
+    color: #fff;
+    display: block;
+    transition: color, background-color .3s ease;
+    box-shadow: -1px 6px 19px -5px rgba(45,64,89,0.69);
+
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #ea5455;
+}
+
+
+.form-control label {
+    color: #fff;
+    font-weight: 600;
+}
+
