@@ -83,6 +83,7 @@ ul {
     padding: 8rem 0 6rem;
 }
 
+
 @media (max-width: 520px) {
     .container {
         padding: 4rem 0;
@@ -436,6 +437,14 @@ input{
     border: none;
     border-radius: 5px;
     padding: 1rem;
+
+    border: 2px solid transparent;
+    transition: border .3s ease;
+
+}
+
+input:focus{
+    border: 2px solid #ea5455;
 }
 
 .query-contatiner {
@@ -462,7 +471,16 @@ input{
 textarea{
     width: 100%;
     border-radius: 5px;
+    outline: none;
+
+    border: 2px solid transparent;
+    transition: border .3s ease;
 }
+
+textarea:focus{
+    border: 2px solid #ea5455;
+}
+
 .btn-submit {
     background-color: #ea5455;
     color: #fff;
