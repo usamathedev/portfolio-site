@@ -86,7 +86,7 @@ ul {
 @media (max-width: 520px) {
     .container {
         padding: 4rem 0;
-        max-height: auto;
+        min-height: auto;
     }
 }
 
