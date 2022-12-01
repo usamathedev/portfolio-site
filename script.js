@@ -1,4 +1,3 @@
-const submitBtn = document.getElementById('submit')
 const fname = document.getElementById('name')
 const email = document.getElementById('email')
 const stAdress = document.getElementById('stadress')
@@ -15,7 +14,6 @@ form.addEventListener('submit' , (e) => {
     checkInputs()
 
 })
-
 
 
 
@@ -74,15 +72,6 @@ function checkInputs(){
         setSuccessFor(postalCode)
     }
 
-
-
-
-    if(passwordVal === "" || passwordVal === null){
-        setErrorFor(password, "Password cannot be empty")
-    }else{
-        setSuccessFor(password)
-
-    }
 
 }
 
