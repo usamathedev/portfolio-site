@@ -11,11 +11,8 @@
 }
 
 
-/* Media queries are used at following break points
-    875, 768, 520
-
-
-
+/*  Media queries are used at following break points
+    875px, 768px, 520px
 */
 
 
@@ -23,6 +20,7 @@ html {
     font-size: 62.5%;
     font-family: 'Metrophobic', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 @media (max-width: 875px) {
     html {
@@ -133,12 +131,6 @@ ul {
 
 }
 
-/* @media (max-width: 520px) {
-    .hero__profile {
-        width: 25rem;
-    }
-} */
-
 .profile__img {
     max-width: 35rem;
     border: 12px solid #ea5455;
@@ -187,6 +179,9 @@ ul {
     margin-bottom: 10rem;
 }
 
+.profile__btns a {
+    text-decoration: none;
+}
 
 .profile__btn-1 {
     background-color: #ea5455;
@@ -414,10 +409,6 @@ ul {
 /* CONTACT ME SECTION */
 /* ********************* */
 
- .check-icon, .exclamation-icon {
-    display: none;
-}
-
 .contact {
     background-color: #2d4059;
 }
@@ -458,6 +449,8 @@ input:focus{
     width: 30%;
     margin-top: 1rem;
 }
+
+/* STYLES TO SHOW OPTION FIELD IN RADIO BUTTONS SECTION */
 
 .query {
     width: auto;
@@ -509,16 +502,16 @@ textarea:focus{
     color: #ea5455;
 }
 
+
+
+/* STYLES FOR CLASSES USED TO SHOW ERROR MESSAGE*/
 .error-msg{
     visibility: hidden;
 }
-
 .error {
     color: #ea5455;
     visibility: visible;
 }
-
-
 .success {
     visibility: hidden;
 }

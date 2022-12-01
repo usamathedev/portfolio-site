@@ -27,13 +27,13 @@
                 <img src="assets/profile.jpg" alt="profile picture">
             </div>
             <h1 class="profile__name">
-                JOHN DOE
+                Prit Davara
             </h1>
             <h3 class="profile__title">Web Developer</h3>
 
             <div class="profile__btns">
                 <button class="btn profile__btn-1"><i class="fa  fa-lg fa-file-arrow-down"></i> Download CV</button>
-                <button class="btn profile__btn-2">Contact Me</button>
+                <a href="#contact"><button class="btn profile__btn-2">Contact Me</button></a>
             </div>
 
         </div>
@@ -47,17 +47,17 @@
             <div class="about__content">
                 <div class="about__desc">
                     <h3>About Me and Academic Honesty</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet non molestias alias esse commodi atque quas cumque officia vitae nemo illum, ullam tenetur obcaecati quod totam cum nihil, dolorum veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusamus cum, dolore suscipit illo enim architecto fugit hic mollitia iste labore ullam, laboriosam optio eius reiciendis perspiciatis aperiam error natus.</p><br>
+                    <p>My name is Prit Davara. I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p><br>
                     <p><strong>Date: </strong>Nov 30, 2022</p>
                 </div>
                 <div class="about__info">
                     <h3>Basic Information</h3>
-                    <p><b>Name: </b> John Doe</p>
-                    <p><b>Email: </b> John Doe</p>
-                    <p><b>Language: </b> John Doe</p>
-                    <p><b>Class: </b> John Doe</p>
-                    <p><b>Section: </b> John Doe</p>
-                    <p><b>Instructor: </b> John Doe</p>
+                    <p><b>Name: </b> Prit Davara</p>
+                    <p><b>Email: </b> dprit54@gmail.com</p>
+                    <p><b>Language: </b> English</p>
+                    <p><b>Class: </b> Web Development</p>
+                    <p><b>Section: </b> ABC</p>
+                    <p><b>Instructor: </b> Dr. John Doe</p>
 
                 </div>
             </div>
@@ -187,7 +187,7 @@
 
 
     <!-- CONTACT ME SECTION -->
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <h1 class="section__heading">Contact Me</h1>
 
@@ -198,8 +198,7 @@
                 <div class="form-control">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+
                     <small class="error-msg">Error Massege</small>
                 </div>
 
@@ -209,8 +208,7 @@
                     <label for="email">Email</label>
                     <!-- CHANGED TYPE FROM EMAIL TO TEXT TO DO VALIDATION WITH JS -->
                     <input type="text" name="email" id="email">
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+
                     <small class="error-msg">Error Massege</small>
                 </div>
 
@@ -219,8 +217,7 @@
                 <div class="form-control">
                     <label for="stadress">Street Address</label>
                     <input type="text" name="stadress" id="stadress">
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+
                     <small class="error-msg">Error Massege</small>
                 </div>
 
@@ -229,8 +226,7 @@
                 <div class="form-control">
                     <label for="city">City</label>
                     <input type="text" name="city" id="city">
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+
                     <small class="error-msg">Error Massege</small>
                 </div>
 
@@ -238,9 +234,7 @@
                 <div class="form-control">
                     <label for="provinces">Province</label>
                     <input id="province" list="provinces" name="provinces" >  
-
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+                    
                     <small class="error-msg">Error Massege</small>  
 
                     <datalist id="provinces">
@@ -267,7 +261,7 @@
                 
                         <div class="query-container">
                             <div class="query-item">
-                                <label for="job">Job</label>
+                                <label for="job">Job Offer</label>
                                 <input class="query"  type="radio" id="job" name="query" value="job" checked>
                             </div>    
                         
@@ -290,8 +284,6 @@
                 <div class="form-control">
                     <label class="block" for="pcode">Postal Code</label>
                     <input type="text" name="pcode" id="pcode">
-                    <i class="fa fa-lg fa-check-circle check-icon"></i>
-                    <i class="fa fa-lg fa-exclamation-circle  exclamation-icon"></i>
                     <small class="error-msg">Error Massege</small>
                 </div>
 
