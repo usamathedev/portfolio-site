@@ -99,7 +99,7 @@ function setErrorFor(input, msg){
 function setSuccessFor(input){
     const el  = input.parentElement
     const errorMsg = el.querySelector('.error-msg')
-    errorMsg.classList = 'form__label success'
+    errorMsg.classList = 'error-msg success'
 }
 
 
