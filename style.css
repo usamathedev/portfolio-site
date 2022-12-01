@@ -148,7 +148,7 @@ ul {
 .profile__name {
     font-size: 6.8rem;
     margin-top: 1rem;
-    letter-spacing: -.5rem;
+    letter-spacing: -.2rem;
 }
 
 @media (max-width: 520px) {
