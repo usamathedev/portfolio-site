@@ -414,7 +414,7 @@ ul {
 /* CONTACT ME SECTION */
 /* ********************* */
 
-.error-msg, .check-icon, .exclamation-icon {
+ .check-icon, .exclamation-icon {
     display: none;
 }
 
@@ -425,7 +425,7 @@ ul {
 .contact form {
     display: grid;
     grid-template-columns: minmax(25rem, 1fr );
-    gap: 2.4rem ;
+    gap: 2rem ;
 
     max-width: 650px;
     margin: 0 auto;
@@ -463,9 +463,13 @@ input:focus{
     width: auto;
     margin-left: .8rem;
 }
-
-.query-field{
+.query-field {
     display: none;
+    margin-top: 1rem;
+}
+
+.query-field-show{
+    display: block;
 }
 
 textarea{
@@ -501,3 +505,20 @@ textarea:focus{
     font-weight: 600;
 }
 
+.form-control label .error-msg {
+    color: #ea5455;
+}
+
+.error-msg{
+    visibility: hidden;
+}
+
+.error {
+    color: #ea5455;
+    visibility: visible;
+}
+
+
+.success {
+    visibility: hidden;
+}

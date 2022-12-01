@@ -192,7 +192,7 @@
             <h1 class="section__heading">Contact Me</h1>
 
 
-            <form action="https://httpbin.org/post" method="post">
+            <form action="https://httpbin.org/post" method="post" id="form">
 
                 <!-- INPUT FOR NAME -->
                 <div class="form-control">
@@ -219,6 +219,9 @@
                 <div class="form-control">
                     <label for="stadress">Street Address</label>
                     <input type="text" name="stadress" id="stadress">
+                    <i class="fa fa-lg fa-check-circle check-icon"></i>
+                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+                    <small class="error-msg">Error Massege</small>
                 </div>
 
                 <!-- INPUT FOR CITY -->
@@ -226,12 +229,20 @@
                 <div class="form-control">
                     <label for="city">City</label>
                     <input type="text" name="city" id="city">
+                    <i class="fa fa-lg fa-check-circle check-icon"></i>
+                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+                    <small class="error-msg">Error Massege</small>
                 </div>
 
                 <!-- INPUT TO SELECT PROVINCE -->
                 <div class="form-control">
                     <label for="provinces">Province</label>
-                    <input list="provinces" name="provinces" >    
+                    <input id="province" list="provinces" name="provinces" >  
+
+                    <i class="fa fa-lg fa-check-circle check-icon"></i>
+                    <i class="fa fa-lg fa-exclamation-circle exclamation-icon"></i>
+                    <small class="error-msg">Error Massege</small>  
+
                     <datalist id="provinces">
                         <option value="Alberta">
                         <option value="British Columbia">
@@ -256,22 +267,22 @@
                 
                         <div class="query-container">
                             <div class="query-item">
-                                <label class="inline" for="job">Job</label>
+                                <label for="job">Job</label>
                                 <input class="query"  type="radio" id="job" name="query" value="job" checked>
                             </div>    
                         
                             <div class="query-item">
-                                <label class="inline" for="school">School</label>
+                                <label for="school">School</label>
                                 <input class="query" type="radio" id="school" name="query" value="school">
                             </div>  
                         
                             <div class="query-item">
-                                <label class="inline" for="other">Other</label>
+                                <label for="other">Other</label>
                                 <input class="query" type="radio" id="other" name="query" value="other">
                             </div>
                         </div>
-                                            <!-- INPUT TO SHOW IF USER SELECT OTHER -->
-                            <input class="query-field" type="text" name="other" id="other" placeholder="Please specify">
+                           <!-- INPUT TO SHOW IF USER SELECT OTHER -->
+                            <input class="query-field" type="text" name="query" id="otherInput" placeholder="Please specify">
                     </div>
 
 
@@ -292,11 +303,13 @@
 
 
                 <!-- INPUT TO SUMBIT -->
-                <input class="btn btn-submit" type="submit" value="Submit">  
+                <input class="btn btn-submit" type="submit" value="Submit" id="submit">  
             </form>
 
         </div>
     </section>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
